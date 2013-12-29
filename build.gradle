@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'eclipse'
 
 uploadArchives {
   repositories.mavenDeployer {
@@ -7,6 +8,12 @@ uploadArchives {
     pom.version = "1.0"
     pom.artifactId = "PROJECTNAME"
     pom.groupId = "com.PROJECTNAME"
+  }
+}
+
+eclipse { 
+  classpath {
+    defaultOutputDir = file('bin')
   }
 }
 
@@ -26,13 +33,6 @@ sourceSets {
       srcDir 'lib/binc/src/main/java'
       srcDir 'lib/briefj/src/main/java'
     }
-  }
-}
-
-apply plugin: 'eclipse'
-eclipse { 
-  classpath {
-    defaultOutputDir = file('bin')
   }
 }
 

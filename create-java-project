@@ -58,4 +58,4 @@ git submodule foreach git pull
 
 gradle eclipse
 chmod 755 $1
-cd ..
+

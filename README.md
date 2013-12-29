@@ -23,9 +23,9 @@ This will:
 - create a script (name upon the project name) to run the java program
 
 Then from eclipse:
-- ``Import`` in ``File`` menue
+- ``Import`` in ``File`` menu
 - ``Import existing projects into workspace``
-- Select the root
+- Select the root of the newly created repo
 - Deselect ``Copy projects into workspace`` to avoid having duplicates
 
 Finally, type ``gradle tutorialj`` from the root of the repository to create a basic

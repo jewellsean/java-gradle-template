@@ -17,7 +17,7 @@ import com.beust.jcommander.Parameter;
  * - Clone the repository
  * - Type ``gradle eclipse`` from the root of the repository
  * - From eclipse:
- *   - ``Import`` in ``File`` menue
+ *   - ``Import`` in ``File`` menu
  *   - ``Import existing projects into workspace``
  *   - Select the root
  *   - Deselect ``Copy projects into workspace`` to avoid having duplicates

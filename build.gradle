@@ -55,6 +55,15 @@ dependencies {
   compile 'net.sf.opencsv:opencsv:2.3'
 }
 
+task(tutorialj, dependsOn: ['build','testClasses'], type: JavaExec) {
+  main = 'tutorialj.Main'
+  classpath {
+  	configurations.compile
+  	sourceSets.main.runtimeClasspath
+  	sourceSets.test.runtimeClasspath
+  }
+}
+
 // http://www.gradle.org/docs/current/userguide/application_plugin.html
 // use 'gradle startScripts' to create script
 // use 'gradle distZip' to create deployable zip

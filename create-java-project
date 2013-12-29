@@ -16,9 +16,13 @@ if [ -d "$DIR" ]; then
   exit 1
 fi
 
-cp -r ~/config/templates/empty-java-code $DIR
-
+# cp -r ~/config/templates/empty-java-code $DIR
+git clone git@github.com:alexandrebouchard/java-gradle-template.git $1
 cd $DIR
+yes | rm -r .git
+rm create-java-project
+rm README.md
+
 # substitute all instance of the string PROJECTNAME to the name of the project:
 
 # in file name

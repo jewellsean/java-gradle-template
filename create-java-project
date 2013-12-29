@@ -28,15 +28,21 @@ rm README.md
 # in file name
 find . | grep PROJECTNAME | while read FILE
 do
-    # modify line below to do what you need, then remove leading "echo" 
     mv $FILE $(echo $FILE | sed "s/PROJECTNAME/$1/g") 2> /dev/null
 done
 
 # in their contents
 find .  -type f | while read FILE
 do
-    # modify line below to do what you need, then remove leading "echo" 
     cat $FILE | sed "s/PROJECTNAME/$1/g" > $FILE.temp 2> /dev/null
+    mv $FILE.temp $FILE
+done
+
+# same for PROJECTDIR, in the contents only:
+PROJECTPATH=`pwd`
+find .  -type f | while read FILE
+do
+    cat $FILE | sed "s/PROJECTPATH/${PROJECTPATH}/g" > $FILE.temp 2> /dev/null
     mv $FILE.temp $FILE
 done
 

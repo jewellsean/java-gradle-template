@@ -4,7 +4,7 @@ import org.junit.Test;
 
 
 
-public class PROJECTNAMETest
+public class ProjectTest
 {
   @Test
   public void test()

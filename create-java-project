@@ -42,9 +42,10 @@ done
 PROJECTPATH=`pwd`
 find .  -type f | while read FILE
 do
-    cat $FILE | sed "s/PROJECTPATH/${PROJECTPATH}/g" > $FILE.temp 2> /dev/null
+    cat $FILE | sed "s@PROJECTPATH@${PROJECTPATH}@g" > $FILE.temp 2> /dev/null
     mv $FILE.temp $FILE
 done
 
 gradle eclipse
+chmod 755 $1
 cd ..

@@ -19,6 +19,7 @@ This will:
 - copy skeleton files
 - substitute the string PROJECTNAME to the project name both inside files and in the name of files/folders
 - run ``gradle eclipse`` to prepare the folder to be imported by eclipse
+- create a script (name upon the project name) to run the java program
 
 
 Customization

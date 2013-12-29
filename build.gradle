@@ -19,6 +19,7 @@ task pullsubmodules(type:Exec) {
   commandLine 'git', 'submodule', 'foreach', 'git', 'pull'
 }
 compileJava.dependsOn pullsubmodules
+eclipse.dependsOn pullsubmodules
 sourceSets {
   main {
     java {

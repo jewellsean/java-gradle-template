@@ -2,9 +2,14 @@ package PROJECTNAME;
 
 import static briefj.CommandLineUtils.*;
 import static briefj.BriefIO.*;
+import tutorialj.Tutorial;
 
 import com.beust.jcommander.Parameter;
 
+/**
+ * # PROJECTNAME
+ */
+@Tutorial(startTutorial = "README.md")
 public class Main implements Runnable
 {
   @Parameter(names = "--input", required = true)

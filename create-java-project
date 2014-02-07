@@ -50,11 +50,11 @@ done
 
 mkdir lib
 git init
-git submodule add https://github.com/alexandrebouchard/binc.git  lib/binc
-git submodule add https://github.com/alexandrebouchard/briefj.git lib/briefj
+#git submodule add https://github.com/alexandrebouchard/binc.git  lib/binc
+#git submodule add https://github.com/alexandrebouchard/briefj.git lib/briefj
 # to add your own, add a git submodule add here, 
 # and add the dependency in the sourceSets block of the build.gradle file
-git submodule foreach git pull
+#git submodule foreach git pull
 
 gradle eclipse
 chmod 755 $1

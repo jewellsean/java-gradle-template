@@ -35,8 +35,5 @@ public class Main implements Runnable
   @Override
   public void run()
   {
-    System.out.println("Hello world");
-    for (String line : readLines(input))
-      System.out.println(line);
   }
 }

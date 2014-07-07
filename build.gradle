@@ -7,7 +7,7 @@ uploadArchives {
     repository(url: "file:///Users/bouchard/Documents/web/public_html/maven/")
     pom.version = "1.0.0"
     pom.artifactId = "PROJECTNAME"
-    pom.groupId = "com.PROJECTNAME"
+    pom.groupId = "ca.ubc.stat"
   }
 }
 

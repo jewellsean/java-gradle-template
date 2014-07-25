@@ -7,7 +7,7 @@ public class Doc
 {
   /**
    * 
-   * Summary
+   * Summary [![Build Status](https://travis-ci.org/alexandrebouchard/PROJECTNAME.png?branch=master)](https://travis-ci.org/alexandrebouchard/PROJECTNAME)
    * -------
    * 
    * PROJECTNAME is ...

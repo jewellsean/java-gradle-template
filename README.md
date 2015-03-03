@@ -35,4 +35,4 @@ Finally, type ``gradle tutorialj`` from the root of the repository to create a b
 Customization
 -------------
 
-Fork this repository and change the string ``alexandrebouchard`` in ``create-java-project`` to your github user.
+Fork this repository and change the string ``jewellsean`` in ``create-java-project`` to your github user.
